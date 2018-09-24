@@ -1,0 +1,19 @@
+# CPU shutdown service
+# Sends alive messages to ARISC co-processor.
+# Not having recieved an alive message from the service
+# the co-processor switches off the CPU.
+
+[Unit]
+Description=CPU shutdown service
+Before=basic.target
+After=sysinit.target local-fs.target
+DefaultDependencies=no
+
+[Service]
+Type=simple
+ExecStart=/boot/cpu-shutdown-client
+Restart=always
+
+[Install]
+WantedBy=basic.target
+
