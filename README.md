@@ -1,4 +1,4 @@
-AllWinner H2+/H3 CPU shutdown (client part)
+AllWinner H2+/H3 system shutdown (client part)
 ---
 
 No description yet.
@@ -6,8 +6,8 @@ No description yet.
 Build
 ---
 Run these commands on target device (requires: git, gcc, make):  
-  git clone https://github.com/afilis/h3-cpu-shutdown-client.git  
-  cd h3-cpu-shutdown-client  
+  git clone https://github.com/afilis/h3-shutdown-client.git  
+  cd h3-shutdown-client  
   make  
 
 Install

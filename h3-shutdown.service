@@ -1,17 +1,17 @@
-# CPU shutdown service
+# H3 shutdown service
 # Sends alive messages to ARISC co-processor.
 # Not having recieved an alive message from the service
-# the co-processor switches off the CPU.
+# the co-processor switches off board devices.
 
 [Unit]
-Description=CPU shutdown service
+Description=H3 shutdown service
 Before=basic.target
 After=sysinit.target local-fs.target
 DefaultDependencies=no
 
 [Service]
 Type=simple
-ExecStart=/boot/cpu-shutdown-client
+ExecStart=/boot/h3-shutdown-client
 Restart=always
 
 [Install]
