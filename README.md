@@ -1,7 +1,9 @@
 AllWinner H2+/H3 system shutdown (client part)
 ---
 
-No description yet.
+The program is intended for prevention of overheating of Orange Pi 
+(H2+/H3 based) after switching off. Overheating usually happens if 
+you are using Armbian stretch (mainline) on it.  
 
 Build
 ---
@@ -12,7 +14,8 @@ Run these commands on target device (requires: git, gcc, make):
 
 Install
 ---
-Run this command on target device (requires: systemd):  
+You should install the server part of the program first.
+After that run this command on target device (requires: systemd):  
   make install
 
 Info

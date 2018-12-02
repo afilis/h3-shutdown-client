@@ -11,3 +11,4 @@ install :
 	install -m 755 $(PROGRAM) /boot/$(PROGRAM)
 	install -m 644 $(SERVICE) /lib/systemd/system/$(SERVICE)
 	systemctl enable $(SERVICE)
+	systemctl start $(SERVICE)

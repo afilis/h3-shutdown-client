@@ -1,8 +1,11 @@
-/*
-
-test
-
-*/
+/**
+ * @file    main.c
+ *
+ * @brief   H3 shutdown client
+ *
+ * This client program sends notification to server program that
+ * device is still alive.
+ */
 
 
 #include <stdio.h>
@@ -26,6 +29,12 @@ struct debug_data_t
 #endif
 
 
+
+/**
+ * @brief   send a notification to ARISC cpu
+ *
+ * @retval   none
+ */
 
 static void watchdog_touch(void)
 {
@@ -66,3 +75,4 @@ int main(int argc, char *argv[])
 
     return 0;
 }
+
